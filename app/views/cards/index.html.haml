@@ -1,0 +1,6 @@
+%section.cards-container
+  - @cards.each do |card|
+    %section.card{ tabindex: '0'}
+      %h2= card.title
+      %p= card.snippet
+      %button.select-card Start

@@ -1,0 +1,12 @@
+$slowSpeed: 500ms;
+$fastSpeed: 100ms;
+$normalSpeed: 300ms;
+$slowEaseIn: $slowSpeed ease-in;
+$slowEaseOut: $slowSpeed ease-out;
+$slowEaseInOut: $slowSpeed ease-in-out;
+$easeIn: $normalSpeed ease-in;
+$easeOut: $normalSpeed ease-out;
+$easeInOut: $normalSpeed ease-in-out;
+$fastEaseIn: $fastSpeed ease-in;
+$fastEaseOut: $fastSpeed ease-out;
+$fastEaseInOut: $fastSpeed ease-in-out;
