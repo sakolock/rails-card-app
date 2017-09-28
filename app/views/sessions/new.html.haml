@@ -1,0 +1,11 @@
+%section.sign-in.container
+  = form_tag login_path, class: "sign-in" do
+    %header
+      %h1 Sign in
+    %fieldset
+      = email_field :email, label: "Email Address" 
+      = password_field :password, label: "Password"
+      = text_field :full_name, label: "Full Name"
+    %fieldset.actions
+      .controls
+        %input(type="submit" value="Sign Up" class="btn btn-default")

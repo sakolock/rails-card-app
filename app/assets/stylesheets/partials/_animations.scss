@@ -1,0 +1,9 @@
+@keyframes pullUpAndOut {
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        z-index: 2000;
+        transform: translateY(-20px);
+    }
+}

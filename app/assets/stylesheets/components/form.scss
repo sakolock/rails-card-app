@@ -1,0 +1,33 @@
+fieldset {
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+input {
+    display: block;
+    width: 150px;
+    padding: 5px 10px;
+    background: #f9f9f9;
+    font: normal 16px Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 3px;
+    margin: 15px 15px 15px 0;
+    &:active,
+    &:focus {
+        background: #fff;
+    }
+    &[type=submit] {
+        padding: 5px 8px;
+        background: #888;
+        color: #fff;
+        &:hover,
+        &:focus {
+            background: #f9f9f9;
+            color: #888;
+        }
+        &:active {
+            background: #eee;
+        }
+    }
+}

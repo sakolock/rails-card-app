@@ -3,7 +3,7 @@
   <head>
     <title>RailsCardApp</title>
     <%= csrf_meta_tags %>
-
+    <script src="https://use.fontawesome.com/2793880438.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -11,6 +11,7 @@
   <body>
     <%= render 'shared/header' %>
     <main id="mainContent">
+      <%= render 'shared/ad_top' %>
       <%= yield %>
     </main>
   </body>

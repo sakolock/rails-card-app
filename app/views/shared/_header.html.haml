@@ -1,21 +1,20 @@
 %header.main-header
-  %nav.header-nav
-    %ul.main-menu
-      %li
-        %a Home
-      %li.has-menu
-        %a Categories
-        %ul.secondary-menu
-          %li
-            %a Anniversary
-          %li
-            %a Birthday
-          %li
-            %a Congratulations
-          %li
-            %a Holiday
-      %li
-        %a Favorites
-  .search-bar
-    %input.header-search{ type: 'search', placeholder: 'bonne nuit' }
-    %button.btn-search{ type: 'search' } Search
+  %section.container.cf
+    %nav.header-nav
+      %ul.main-menu
+        %li= link_to "Home", root_path
+        %li.has-menu
+          %a Categories
+          %ul.secondary-menu
+            %li= link_to "Anniversary"
+            %li
+              %a Birthday
+            %li= link_to "Congratulations"
+            %li
+              %a Holiday
+        %li= link_to "Favorites"
+        %li= link_to "Settings"
+      .right-nav-bar
+        %input.header-search{ type: 'search', placeholder: 'bonne nuit' }
+        %button.btn.btn-search{ type: 'search' } Search
+        %a.login= link_to "Log in", login_path

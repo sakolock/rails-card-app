@@ -1,0 +1,18 @@
+%section.cd-card{ tabindex: '0', 'data-id': card.id}
+  %h2 
+    = link_to card.title, card_path(card)
+  %p= card.snippet
+  .cd-bottom-line
+    %button.cd-card-btn.cd-select-card Start
+    %button.cd-card-btn.cd-like-card
+      %i.cd-card-icon.fa.fa-bookmark-o
+    %button.cd-card-btn.cd-favorite-card
+      %i.cd-card-icon.fa.fa-heart-o
+    %button.cd-card-btn.cd-like-card
+      %i.cd-card-icon.fa.fa-thumbs-o-up.selected
+    %button.cd-card-btn.cd-rating-card
+      %i.cd-card-icon.fa.fa-star-o
+      %i.cd-card-icon.fa.fa-star-o
+      %i.cd-card-icon.fa.fa-star-o
+      %i.cd-card-icon.fa.fa-star-o
+      %i.cd-card-icon.fa.fa-star-o
